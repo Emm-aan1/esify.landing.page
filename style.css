@@ -11,8 +11,8 @@
   color: #000000;
   min-height: 100vh;
   /* position: absolute; */
-  width: 1440px;
-  height: 693px;
+  max-width: 2440px;
+  max-height: 2000px;
   left: 0px;
   top: 0px;
 }
@@ -20,8 +20,8 @@
 .second-sec {
   /* position: absolute; */
   padding: 1em 0;
-  width: 1440px;
-  height: 560px;
+  width: 2000px;
+  height: 600px;
   background: #D7D9DD;
 }
 
@@ -135,3 +135,9 @@
   padding: 0 2em;
   margin: auto;
 }
+
+.footer-sec{
+
+  background: #3399FF;
+  
+  }
