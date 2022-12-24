@@ -1,8 +1,14 @@
+:root {
+  --next-prev-button-colour : #224485;
+  --browse-more-button-colour :#2C91DB;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
+  font-family: Roboto;
 }
 
 /* first section  */
@@ -11,8 +17,8 @@
   color: #000000;
   min-height: 100vh;
   /* position: absolute; */
-  max-width: 2440px;
-  max-height: 2000px;
+  width: 1440px;
+  height: 693px;
   left: 0px;
   top: 0px;
 }
@@ -20,8 +26,8 @@
 .second-sec {
   /* position: absolute; */
   padding: 1em 0;
-  width: 2000px;
-  height: 600px;
+  width: 1440px;
+  height: 560px;
   background: #D7D9DD;
 }
 
@@ -136,8 +142,80 @@
   margin: auto;
 }
 
-.footer-sec{
+.btn-primary {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 51px;
+  width: 235px;
+  left: 595px;
+  top: 2191px;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--browse-more-button-colour);
+  margin-bottom: 50px;
+}
 
-  background: #3399FF;
-  
-  }
+.btn-secondary {
+  height: 50px;
+  width: 120px;
+  left: 314px;
+  top: 561px;
+  border-radius: 7px;
+}
+
+/*.carousel-control-next {
+  height: 80px;
+  width: 80px;
+  border-radius: 0px;
+  background-color: var(--next-prev-button-colour);
+  transform: matrix(0, 1, 1, 0);
+}*/
+
+.customer-list {
+  height: 352px;
+  width: 1440px;
+  border-radius: 0px;
+  background-color: #475D88;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+
+.popular-name {
+  background-color: #9399A5;
+  height: 225px;
+  width: 1440px;
+  left: 0px;
+  top: 5191px;
+  border-radius: 0px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.popular-name span {
+  line-height: 29px;
+}
+
+.popular-name .name {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.customer-list span {
+  /*position: absolute;*/
+  width: 943px;
+  height: 29px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
