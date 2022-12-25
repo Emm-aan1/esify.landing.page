@@ -9,6 +9,7 @@
   padding: 0;
   /* overflow-x: hidden; */
   font-family: Roboto;
+  
 }
 
 /* first section  */
@@ -17,18 +18,21 @@
   color: #000000;
   min-height: 100vh;
   /* position: absolute; */
-  width: 1440px;
-  height: 693px;
+  max-width: 2440px;
+  max-height: 1693px;
   left: 0px;
   top: 0px;
+  font-family: Roboto;
+  padding-bottom: 20px;
 }
 
 .second-sec {
   /* position: absolute; */
   padding: 1em 0;
-  width: 1440px;
-  height: 560px;
+  max-width: 2440px;
+  max-height: 1560px;
   background: #D7D9DD;
+  font-family: Roboto;
 }
 
 
@@ -218,6 +222,10 @@
   font-size: 25px;
   text-align: center;
   line-height: 40px;
+}
+
+.give-voice{
+  background:#FFFFFF;
 }
 
 .footer-sec{
