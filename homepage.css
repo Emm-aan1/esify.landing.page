@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #D9D9D9;
+}
+
+.header {
+  position: relative;
+  background: #3399FF;
+  height: auto;
+}
+
+.header .navbar-light {
+  padding-top: 1em;
+  margin: auto;
+}
+
+.header .navbar-expand-lg a img {
+  width: 250px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.header span form a {
+  width: 39px;
+  height: 38px;
+  background: #FFBA6F;
+  border-radius: 4px;
+}
+
+
+/* main section  */
+.main {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.main hr {
+  width: 90%;
+  margin: auto;
+}
+
+
+.main .row .first-card {
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+  width: 37rem;
+}
+
+.main ul li img {
+  border-radius: 50%;
+}
+
+.main .top-row .second-card {
+  background: transparent;
+  border: none;
+}
+
+
+.main .second-card .mt-5 {
+  width: 621px;
+  height: 281px;
+  margin: auto;
+  background: #D9EDF7;
+  border-radius: 10px;
+}
+
+.main .top-row .second-card .btn:first-child {
+  width: 621px;
+  height: 53px;
+  background: #FFBA6F;
+  margin: auto;
+  box-shadow: 0px 0px 5px 1px rgba(39, 87, 211, 0.2);
+  border-radius: 10px;
+}
+
+.main .top-row .second-card .btn:last-child {
+  width: 125px;
+  height: 44px;
+  background: #5CB85C;
+  border-radius: 6px;
+}
+
+.main .last-card .card-body {
+  width: 948px;
+  height: 54px;
+  background: rgba(229, 229, 229, 0.34);
+  border-radius: 10px;
+}
+
+
+/* footer section  */
+footer {
+  background: #3399FF;
+}
+
+footer .row .form-outline {
+  position: relative;
+}
+
+footer .row .form-outline input {
+  background: #295AB7;
+  border: 1px solid #18A0FB;
+  border-radius: 3px;
+}
+
+footer .row .form-outline input::placeholder {
+  color: #fff;
+}
+
+footer .row .form-outline i {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+
+@media(max-width:768px) {
+
+  .main .row .first-card,
+  .main .row .second-card .mt-5,
+  .main .top-row .second-card .btn:first-child {
+    width: 27rem;
+  }
+
+  .main .last-card {
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start a Petition</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="startPetition.css">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand p-0" href="#"><img src="images/logo_text-removebg-preview 4.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse pr-5 pb-4" id="navbarText">
+        <ul class="navbar-nav mr-auto"></ul>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link nav-item  pr-4 text-light" href="#">Start a Petition</a>
+        </span>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link nav-item  pr-4 text-light" href="#">FAQ</a>
+        </span>
+        <span class="navbar-text navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle pr-4 text-light" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse Petitions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Active Petitions</a>
+              <a class="dropdown-item" href="#">Latest Petition</a>
+              <a class="dropdown-item" href="#">Sponsored Petition</a>
+            </div>
+          </li>
+        </span>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link nav-item  pr-4 text-light" href="#">My Account</a>
+        </span>
+        <span class="navbar-text navbar-nav">
+          <form class="form-inline">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <a class="nav-item nav-link m-1 " href="#"><i class="fa-solid fa-magnifying-glass pl-1"></i></a>
+          </form>
+        </span>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="main pt-4">
+    <p class="h3 mb-3">Start your petition</p>
+    <p class="lead mb-2">Petition Details (Step 1/3)</p>
+    <hr>
+    <p class="lead mt-3">
+      Please complete the details below. You may edit and format your petition after completion from your Esify.speak
+      toolbox. Your name may also be edited<br> from your Esify.speak control pannel.
+    </p>
+
+    <form>
+      <div class="form-group row">
+        <label for="inputPetitionName" class="col-sm-2 col-form-label">Petition Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPetitionName">
+          <small id="emailHelp" class="form-text text-muted">Suggest a title of 10 words or less.</small>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputCountry" class="col-sm-2 col-form-label">Country or Region</label>
+        <div class="col-sm-10">
+          <select class="form-control" id="inputCountry" name="countries">
+          </select>
+          <small id="emailHelp" class="form-text text-muted">Select a country where your petition is relevant.</small>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPetitionName" class="col-sm-2 col-form-label">Target</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputTarget">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPetitionName" class="col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputCategory">
+          <small id="emailHelp" class="form-text text-muted">Please select a relevant category for your
+            petition.</small>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPetitionName" class="col-sm-2 col-form-label">Petition</label>
+        <div class="col-sm-10">
+          <textarea name="text" class="form-control" id="inputPetition" rows="5"></textarea>
+          <small id="emailHelp" class="form-text text-muted">Please write the exact text you will be asking people to
+            sign or vote for. It should usually include a request to the target to take action or refrain from taking
+            some action.</small>
+        </div>
+      </div>
+
+      <div class="form-group row mb-5">
+        <div class="col-sm-10 text-center mt-3">
+          <button type="submit" class="btn">Next</button>
+        </div>
+      </div>
+
+      <div class="card last-card mb-4">
+        <div class="card-body text-left pl-5">
+          <span class="text-primary">Control Panel</span> / Start a petition
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-light">Esify.speak</h5>
+
+          <ul class="list-unstyled mb-4">
+            <li>
+              <a href="#!" class="text-white">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Start a Petition</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">How to write a Petition</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Sponsored Petition</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-light">Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Help(FAQ)</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-light">Social</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Linkedln</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Twitter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase mb-4 text-light">Newsletter</h5>
+          <p class="lead text-light">The best of Esify once a week</p>
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="form5Example2" class="form-control pl-4" placeholder="Email Address..." />
+            <a href="#"> <i class="fa-regular fa-envelope text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 border-top border-light text-light">
+      &copy;2022 Esify.speak All right reserved.
+    </div>
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
+  <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const selectDrop = document.querySelector('#inputCountry')
+
+      fetch('https://restcountries.com/v3.1/all').then(res => {
+        return res.json();
+      }).then(data => {
+        let output = '';
+        data.forEach(country => {
+          output += `<option value="${country.name.common}">${country.name.common}</option>`;
+          console.log(country)
+        })
+        selectDrop.innerHTML = output
+      }).catch(err => {
+        console.log(err);
+      })
+    });
+
+  </script>
+</body>
+
+</html>

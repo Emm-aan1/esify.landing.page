@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-45%, -50%);
+    }
+
+    form .form-group input {
+      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+      padding: 25px 0 25px 30px;
+    }
+
+    .sign button {
+      width: 200px;
+      height: 55px;
+      background: #3399FF;
+      box-shadow: 0px 2px 5px 1px rgba(39, 87, 211, 0.2);
+      border-radius: 10px;
+    }
+
+    hr {
+      position: absolute;
+      width: 500px;
+      height: 0px;
+      left: 18%;
+      top: 15vh;
+      border: 3px solid #3399FF;
+      transform: rotate(90deg);
+    }
+
+    @media(max-width:768px) {
+      .first-sign {
+        position: relative;
+        left: 10%;
+      }
+
+      hr {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sign first-sign text-center d-float float-left mb-5">
+    <p class="h3 mb-3">Welcome Back!</p>
+    <p class="lead">
+      To stay connected with us,<br> please login with your<br> personal info
+    </p>
+    <button type="button" class="btn btn-primary">Sign In</button>
+  </div>
+
+  <hr>
+
+
+  <div class="sign text-center d-float float-right">
+    <p class="h3">Let&lsquo;s Get Started!</p>
+    <p class="h5 mb-3">Create an Account</p>
+
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control pl-5" id="exampleInputText" placeholder="Username">
+      </div>
+      <div class="form-group mt-4">
+        <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  </div>
+
+  <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
