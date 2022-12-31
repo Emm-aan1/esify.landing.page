@@ -5,11 +5,142 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>FAQs</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+   <!--Bootstrap-Icons Link-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand p-0" href="#"><img src="images/logo_text-removebg-preview 4.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse pr-5 pb-4" id="navbarText">
+        <ul class="navbar-nav mr-auto"></ul>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link nav-item  pr-5 text-light" href="#">Start a Petition</a>
+        </span>
+        <span class="navbar-text navbar-nav dropdown-collapse">
+          <button class="btn btn-primary" type="button">FAQ</button> </span>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link pr-5 text-light " href="#" role="button" aria-expanded="false">
+            Browse Petitions <i class="bi bi-chevron-down"></i></a>
+        </span>
+        <span class="navbar-text navbar-nav">
+          <a class="nav-link pr-5 text-light" href="#" role="button" aria-expanded="false"> 
+            My Account <i class="bi bi-chevron-down"></i></a>
+        </span>
+          <span class="navbar-text navbar-nav">
+            <form class="d-flex mx-5" role="search">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-warning ml-3" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </span>
+        
+      </div>
+    </nav>
+  </div>
 
+  <div class="faq ">
+    <h3 class="head mt-3 text-center">Frequently Asked Question</h3>
+    <span class="navbar-text navbar-nav center-block">
+      <form class="d-flex ml-5" role="search">
+        <input class="form-control form-control-lg me-2 " type="search" placeholder="Search the knowledge base" aria-label="Search">
+        <button class="btn btn-primary ml-3" type="submit">Search</button>
+      </form>
+    </span>
+  </div>
+  
+<div class="center-block">
+  <nav><a href="#faq">What type of petition should i support?</a></nav>
+  <nav><a href="#faq">What are password character requirements?</a></nav>
+  <nav><a href="#faq">How do i get people's opinion?</a></nav>
+ <nav><a href="#faq">How do i vote in schools and organizations?</a></nav>
+  <nav><a href="#faq">How do i write petition questions to organizations?</a></nav>
+</div>
+
+<section class="p-type">
+  <div>
+    <h6>What type of petition should i support?</h6>
+    <p class="lead">On student council to conduct elections in the university and made available by the committee on election.</p>
+  </div> 
+  <div>
+    <h6>What are password character requirements?</h6>
+    <p class="lead">Password should include 8 characters, a mix of upper case with figures e.g BolD1234...</p>    
+  </div>
+  <div>
+<h6>How do i get people's opinion?</h6>
+<p class="lead">Make sure the information you are presenting is accurate and has evidence</p>
+  </div>
+  <div>
+    <h6>How do i vote in schools and organizations?</h6>
+    <p class="lead">Follow the steps on the platform for conduct of a Vote</p>
+  </div>
+  <div>
+    <h6>How do i write petition questions to organizations?</h6>
+    <p class="lead">A petition that includes your demand could be written by:
+      <ul>Identify the problem</ul>
+      <ul>Talking about the solution and then raising a question to the right authority in the organization</ul>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="text-center text-dark p-3 border-top border-white">
+    © 2022 Esify. All right reserved
+</footer>
+  
+  <style>
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto';
+}
+
+.a-tag{
+  justify-content:center;
+  align-items: center;
+}
+.header {
+  position: relative;
+  background: #3399FF;
+  height: auto;
+}
+
+.header .navbar-light {
+  padding-top: 1em;
+  margin: auto;
+}
+
+.header .navbar-expand-lg a img {
+  width: 250px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+@media(max-width: 650px){
+  .header .navbar-nav{
+    display: block;
+  }
+}
+
+  </style>
+
+
+  <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+  <script src="bootstrap/popper.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
