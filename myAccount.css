@@ -31,7 +31,10 @@ body {
 
 
 /* main section  */
+.card{
+  background: rgba(229, 229, 229, 0.34);
 
+}
 
 /* footer section  */
 footer {
