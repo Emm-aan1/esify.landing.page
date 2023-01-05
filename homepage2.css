@@ -1,0 +1,249 @@
+:root {
+  --next-prev-button-colour : #224485;
+  --browse-more-button-colour :#2C91DB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  font-family: 'roboto';
+  
+}
+
+/* first section  */
+.first-sec {
+  background: #F5F5F5;
+  color: #000000;
+  min-height: 100vh;
+  /* position: absolute; */
+  max-width: 2440px;
+  max-height: 1693px;
+  left: 0px;
+  top: 0px;
+  font-family: Roboto;
+  padding-bottom: 20px;
+}
+
+.second-sec {
+  /* position: absolute; */
+  padding: 1em 0;
+  max-width: 2440px;
+  max-height: 1560px;
+  background: #D7D9DD;
+  font-family: Roboto;
+}
+
+
+.nav-pills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-pills img {
+  width: 12em;
+
+}
+
+.nav-pills .navbar-collapse .navbar-nav .nav-item {
+  padding: 0 2em;
+}
+
+
+/* second section  */
+
+.second-sec .container .grid {
+  width: 80%;
+  margin: 1em auto 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.second-sec .container .grid .col {
+  grid-column: 1/4;
+}
+
+.second-sec .container .grid .col img {
+  height: 20em;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 46px 0px 0px 46px;
+}
+
+.second-sec .container .grid .col-text {
+  height: 20em;
+  border-radius: 0 46px 46px 0;
+  grid-column: 4/9;
+}
+
+.second-sec .container .grid .btn {
+  background: #FFBA6F;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  width: 140px;
+  height: 40px;
+}
+
+
+/* trending  */
+.trending {
+  background: #F5F5F5;
+}
+
+.trending .card {
+  border: none;
+  background: transparent;
+}
+
+.trending .card .grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.trending .card .grid .col {
+  grid-column: 1/4;
+}
+
+.trending .col img {
+  height: 20em;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 46px 0px 0px 46px;
+}
+
+.trending .card .grid .col-text {
+  grid-column: 4/9;
+  border-radius: 0 46px 46px 0;
+  background: #fff;
+}
+
+.trending .card .grid .col-text .btn {
+  background: #FFBA6F;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 0 1.4em;
+}
+
+
+/* give voice  */
+.give-voice {
+  background: #F5F5F5;
+}
+
+.give-voice .voices {
+  width: 70%;
+}
+
+.give-voice .voices .card {
+  background: transparent;
+  border: none;
+}
+
+.give-voice .voices .rounded {
+  width: 80%;
+  padding: 0 2em;
+  margin: auto;
+}
+
+.btn-primary {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 51px;
+  width: 235px;
+  left: 595px;
+  top: 2191px;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  background-color: var(--browse-more-button-colour);
+  margin-bottom: 50px;
+}
+
+.btn-secondary {
+  height: 50px;
+  width: 120px;
+  left: 314px;
+  top: 561px;
+  border-radius: 7px;
+}
+
+/*.carousel-control-next {
+  height: 80px;
+  width: 80px;
+  border-radius: 0px;
+  background-color: var(--next-prev-button-colour);
+  transform: matrix(0, 1, 1, 0);
+}*/
+
+.customer-list {
+  height: 352px;
+  width: 1440px;
+  border-radius: 0px;
+  background-color: #475D88;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+}
+
+.popular-name {
+  background-color: #9399A5;
+  height: 225px;
+  width: 1440px;
+  left: 0px;
+  top: 5191px;
+  border-radius: 0px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.popular-name span {
+  line-height: 29px;
+}
+
+.popular-name .name {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.customer-list span {
+  /*position: absolute;*/
+  width: 943px;
+  height: 29px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.give-voice{
+  background:#FFFFFF;
+}
+
+.footer-sec{
+
+  background: #3399FF;
+  
+  }
+
+  @media(max-width: 650px){
+    .carousel-inner .img-fluid{
+      display: none;
+    }
+    .carousel-inner .col-text{
+      width: 80vw;
+      
+    }
+
+    .trending .img-fluid{
+      display: none;
+    }
+  }
