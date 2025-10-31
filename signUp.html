@@ -8,89 +8,185 @@
   <title>Sign Up</title>
 
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      width: 50%;
-      position: absolute;
-      top: 50%;
-      left: 45%;
-      transform: translate(-45%, -50%);
-    }
-
-    form .form-group input {
-      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
-      padding: 25px 0 25px 30px;
-    }
-
-    .sign button {
-      width: 200px;
-      height: 55px;
-      background: #3399FF;
-      box-shadow: 0px 2px 5px 1px rgba(39, 87, 211, 0.2);
-      border-radius: 10px;
-    }
-
-    hr {
-      position: absolute;
-      width: 500px;
-      height: 0px;
-      left: 18%;
-      top: 15vh;
-      border: 3px solid #3399FF;
-      transform: rotate(90deg);
-    }
-
-    @media(max-width:768px) {
-      .first-sign {
-        position: relative;
-        left: 10%;
-      }
-
-      hr {
-        display: none;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <div id="header-include" data-active="account"></div>
 
-  <div class="sign first-sign text-center d-float float-left mb-5">
-    <p class="h3 mb-3">Welcome Back!</p>
-    <p class="lead">
-      To stay connected with us,<br> please login with your<br> personal info
-    </p>
-    <button type="button" class="btn btn-primary">Sign In</button>
-  </div>
+  <main class="bg-light py-3">
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8 col-lg-9">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h1 class="h4 mb-2 text-center">Let’s Get Started</h1>
+              <p class="text-muted text-center mb-4">Create your Esify.speak account</p>
 
-  <hr>
+              <form id="signup-form" novalidate class="mx-auto" style="max-width: 560px;">
+                <div class="form-group">
+                  <label for="username" class="small text-muted">Username</label>
+                  <input type="text" class="form-control form-control-lg" id="username" placeholder="Choose a username"
+                    required>
+                </div>
 
+                <div class="form-group">
+                  <label for="email" class="small text-muted">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="you@example.com"
+                    required>
+                </div>
 
-  <div class="sign text-center d-float float-right">
-    <p class="h3">Let&lsquo;s Get Started!</p>
-    <p class="h5 mb-3">Create an Account</p>
+                <div class="form-group mb-2">
+                  <label for="password" class="small text-muted">Password</label>
+                  <input type="password" class="form-control form-control-lg" id="password"
+                    placeholder="Create a password" required autocomplete="new-password" aria-describedby="pwHelp">
+                  <small id="pwHelp" class="form-text text-muted">At least 8 characters, with uppercase, lowercase, and
+                    a number.</small>
+                </div>
 
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control pl-5" id="exampleInputText" placeholder="Username">
+                <div class="progress mb-3" style="height:6px;">
+                  <div id="pwStrength" class="progress-bar" role="progressbar" style="width:0%"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="confirm" class="small text-muted">Confirm Password</label>
+                  <input type="password" class="form-control form-control-lg" id="confirm"
+                    placeholder="Re-enter password" required autocomplete="new-password">
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="terms" required>
+                  <label class="custom-control-label" for="terms">I agree to the <a href="#">Terms of Use</a></label>
+                </div>
+
+                <button type="submit" id="signup-btn" class="btn btn-primary btn-lg btn-block" disabled>Create
+                  Account</button>
+
+                <div class="text-center mt-3">
+                  <small class="text-muted">Have an account? <a href="login.html">Log in</a></small>
+                </div>
+
+                <hr class="my-4">
+
+                <button type="button" id="facebook-btn" class="btn btn-outline-primary btn-block">
+                  <i class="fab fa-facebook-f mr-2"></i> Continue with Facebook
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-group mt-4">
-        <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Email">
+    </div>
+  </main>
+
+  <div id="footer-include"></div>
+
+  <div class="modal fade" id="wipModal" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 id="wipModalLabel" class="mb-1">Still in progress</h5>
+          <p class="mb-2 text-muted">This feature isn’t available yet. We’re working on it.</p>
+          <small class="text-muted d-block">Please check back later.</small>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+        </div>
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Submit</button>
-    </form>
+    </div>
   </div>
 
   <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="include.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('signup-form');
+      var btn = document.getElementById('signup-btn');
+      var fb = document.getElementById('facebook-btn');
+
+      var user = document.getElementById('username');
+      var email = document.getElementById('email');
+      var pw = document.getElementById('password');
+      var cf = document.getElementById('confirm');
+      var terms = document.getElementById('terms');
+      var bar = document.getElementById('pwStrength');
+
+      function score(v) {
+        var s = 0;
+        if (v.length >= 8) s += 25;
+        if (/[a-z]/.test(v)) s += 25;
+        if (/[A-Z]/.test(v)) s += 25;
+        if (/\d/.test(v)) s += 25;
+        return s;
+      }
+
+      function updateBar() {
+        var v = pw.value || '';
+        var s = score(v);
+        bar.style.width = s + '%';
+        bar.className = 'progress-bar';
+        if (s < 50) bar.classList.add('bg-danger');
+        else if (s < 75) bar.classList.add('bg-warning');
+        else bar.classList.add('bg-success');
+      }
+
+      function validPassword() {
+        var v = pw.value || '';
+        return v.length >= 8 && /[a-z]/.test(v) && /[A-Z]/.test(v) && /\d/.test(v);
+      }
+
+      function validMatch() {
+        return cf.value && pw.value && cf.value === pw.value;
+      }
+
+      function allValid() {
+        return user.value.trim().length > 0 &&
+          email.checkValidity() &&
+          validPassword() &&
+          validMatch() &&
+          terms.checked;
+      }
+
+      function refresh() {
+        updateBar();
+        btn.disabled = !allValid();
+      }
+
+      ['input', 'blur'].forEach(function (evt) {
+        user.addEventListener(evt, refresh);
+        email.addEventListener(evt, refresh);
+        pw.addEventListener(evt, refresh);
+        cf.addEventListener(evt, refresh);
+      });
+      terms.addEventListener('change', refresh);
+
+      fb.addEventListener('click', function () {
+        $('#wipModal').modal('show');
+      });
+
+      form.addEventListener('submit', function (e) {
+        if (!allValid()) {
+          e.preventDefault();
+          return;
+        }
+        e.preventDefault();
+        btn.disabled = true;
+        btn.innerText = 'Please wait...';
+        $('#wipModal').modal('show');
+      });
+
+      $('#wipModal').on('hidden.bs.modal', function () {
+        btn.disabled = false;
+        btn.innerText = 'Create Account';
+      });
+
+      refresh();
+    })();
+  </script>
 </body>
 
 </html>
