@@ -5,58 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login • Esify.speak</title>
+  <title>Login</title>
 
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <div id="header-include" data-active="account"></div>
 
-  <!-- Fixed header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top" style="z-index:1030">
-    <a class="navbar-brand d-flex align-items-center" href="index.html" style="line-height:0">
-      <img src="images/logo_text-removebg-preview 4.png" alt="Esify.speak" style="height:60px;display:block">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="startPetition.html">Start a Petition</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="browseMenu" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Browse</a>
-          <div class="dropdown-menu" aria-labelledby="browseMenu">
-            <a class="dropdown-item" href="browsePetition.html">Active Petitions</a>
-            <a class="dropdown-item" href="browsePetition.html">Latest Petitions</a>
-            <a class="dropdown-item" href="browsePetition.html">Sponsored Petitions</a>
-          </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-      </ul>
-
-      <div class="d-flex">
-        <a href="login.html" class="btn btn-outline-primary mr-2">Login</a>
-        <a href="signUp.html" class="btn btn-primary">Sign Up</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main -->
-  <main class="container" style="padding-top:96px">
+  <main class="container" style="padding-top:35px">
     <div class="row justify-content-center">
       <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <div class="text-center mb-4">
-          <h1 class="h3 mb-1">Log In</h1>
-          <p class="text-muted mb-0">Log in to access your petitions.</p>
-        </div>
+        <h1 class="h4 text-center mb-3">Log In</h1>
+        <p class="text-center text-muted mb-4">Access your petitions and account.</p>
 
-        <!-- Social login (Facebook -> Not available modal) -->
-        <div class="d-flex align-items-stretch mb-3">
-          <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#naModal">
-            Continue with Facebook
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary btn-block btn-lg" id="facebook-btn">
+            <i class="fab fa-facebook-f mr-2"></i> Continue with Facebook
           </button>
         </div>
 
@@ -66,18 +33,28 @@
           <hr class="flex-grow-1">
         </div>
 
-        <!-- Email/Password form -->
-        <form action="#" onsubmit="event.preventDefault(); $('#naModal').modal('show');">
+        <form id="login-form">
           <div class="form-group">
-            <label for="username" class="small text-muted">Username</label>
-            <input type="text" id="username" class="form-control" placeholder="Enter username" required>
-          </div>
-          <div class="form-group">
-            <label for="password" class="small text-muted">Password</label>
-            <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+            <label for="username" class="sr-only">Username</label>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+              </div>
+              <input type="text" id="username" class="form-control" placeholder="Username" required>
+            </div>
           </div>
 
-          <div class="form-group d-flex justify-content-between align-items-center">
+          <div class="form-group">
+            <label for="password" class="sr-only">Password</label>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+              </div>
+              <input type="password" id="password" class="form-control" placeholder="Password" required>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="rememberMe">
               <label class="custom-control-label" for="rememberMe">Remember me</label>
@@ -85,76 +62,32 @@
             <a href="forgotPassword.html" class="small">Forgot password?</a>
           </div>
 
-          <button type="submit" class="btn btn-success btn-block">Login</button>
-        </form>
+          <button id="submit-btn" type="submit" class="btn btn-success btn-block btn-lg">Login</button>
 
-        <p class="text-center mt-3">
-          <span class="text-muted">Don’t have an account?</span>
-          <a href="signUp.html">Sign Up</a>
-        </p>
+          <div class="text-center mt-3">
+            <small class="text-muted d-block">New here? <a href="signUp.html">Create an account</a></small>
+          </div>
+        </form>
       </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <small class="text-muted">Need help? Visit <a href="faq.html">FAQ</a></small>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light mt-5">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-6 col-md-3 mb-3">
-          <h6 class="text-uppercase">Esify.speak</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="index.html" class="text-white">Home</a></li>
-            <li><a href="startPetition.html" class="text-white">Start a Petition</a></li>
-            <li><a href="#" class="text-white">How to write a Petition</a></li>
-            <li><a href="browsePetition.html" class="text-white">Sponsored Petition</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-3 mb-3">
-          <h6 class="text-uppercase">Help</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="faq.html" class="text-white">Help (FAQ)</a></li>
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Contact Us</a></li>
-            <li><a href="#" class="text-white">Terms of Use</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-3 mb-3">
-          <h6 class="text-uppercase">Socials</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="#" class="text-white" data-toggle="modal" data-target="#naModal">Facebook</a></li>
-            <li><a href="#" class="text-white" data-toggle="modal" data-target="#naModal">Twitter</a></li>
-            <li><a href="#" class="text-white" data-toggle="modal" data-target="#naModal">LinkedIn</a></li>
-            <li><a href="#" class="text-white" data-toggle="modal" data-target="#naModal">Blog</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-3 mb-3">
-          <h6 class="text-uppercase">Newsletter</h6>
-          <p class="mb-2">The best of Esify once a week</p>
-          <a href="https://gmail.us12.list-manage.com/subscribe/post?u=568269adc75ff99a34b20e3d4&id=d98f7a05d8&f_id=00a3bce0f0"
-            target="_blank" rel="noopener" class="btn btn-outline-light btn-block">Notify Me</a>
-        </div>
-      </div>
-    </div>
-    <div class="border-top border-light text-center py-3">
-      © 2022 Esify.speak. All rights reserved.
-    </div>
-  </footer>
+  <div id="footer-include"></div>
 
-  <!-- Not-Available Modal -->
-  <div class="modal fade" id="naModal" tabindex="-1" role="dialog" aria-labelledby="naModalTitle" aria-hidden="true">
+  <div class="modal fade" id="wipModal" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="naModalTitle">Feature not available yet</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
+        <div class="modal-body p-4">
+          <h5 id="wipModalLabel" class="mb-1">Still in progress</h5>
+          <p class="mb-2 text-muted">This feature isn’t available yet. We’re working on it.</p>
+          <small class="text-muted d-block">Please check back later.</small>
         </div>
-        <div class="modal-body">
-          This feature is still in progress and will be available soon. Thank you for your patience!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Okay</button>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
         </div>
       </div>
     </div>
@@ -163,6 +96,30 @@
   <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="include.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var fb = document.getElementById('facebook-btn');
+      var form = document.getElementById('login-form');
+      var btn = document.getElementById('submit-btn');
+
+      fb.addEventListener('click', function () {
+        $('#wipModal').modal('show');
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        btn.disabled = true;
+        btn.innerText = 'Please wait...';
+        $('#wipModal').modal('show');
+      });
+
+      $('#wipModal').on('hidden.bs.modal', function () {
+        btn.disabled = false;
+        btn.innerText = 'Login';
+      });
+    });
+  </script>
 </body>
 
 </html>
