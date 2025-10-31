@@ -2,205 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Account</title>
 
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="myAccount.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand p-0" href="#"><img src="images/logo_text-removebg-preview 4.png" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse pr-5 pb-4" id="navbarText">
-        <ul class="navbar-nav mr-auto"></ul>
-        <span class="navbar-text navbar-nav">
-          <a class="nav-link nav-item  pr-4 text-light" href="startPetition.html">Start a Petition</a>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle pr-4 text-light" href="browsePetition.html" id="navbarDropdownMenuLink"
-              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Browse Petitions
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="browsePetition.html">Active Petitions</a>
-              <a class="dropdown-item" href="browsePetition.html">Latest Petition</a>
-              <a class="dropdown-item" href="browsePetition.html">Sponsored Petition</a>
+  <div id="header-include" data-active="account"></div>
+
+  <main class="bg-light py-4">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+          <h1 class="h4 text-primary mb-1">Jane Cooper</h1>
+          <small class="text-muted">Member since Dec 1, 2022</small>
+        </div>
+        <a href="mailbox.html" class="btn btn-outline-secondary btn-sm d-none d-md-inline-flex">
+          <i class="fa-regular fa-envelope mr-2"></i> Mailbox
+        </a>
+      </div>
+
+      <div class="card border-0 shadow-sm mb-3">
+        <div class="card-body">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent p-0 mb-3">
+              <li class="breadcrumb-item"><a href="#">Control Panel</a></li>
+              <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+            </ol>
+          </nav>
+
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="janecooper@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="acctType">Account Type</label>
+                <input class="form-control" list="acctTypes" id="acctType" placeholder="individual / organization"
+                  required />
+                <datalist id="acctTypes">
+                  <option value="individual"></option>
+                  <option value="organization"></option>
+                </datalist>
+                <div class="invalid-feedback">Please select an account type.</div>
+              </div>
             </div>
-          </li>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <a class="nav-link nav-item  pr-4 text-light" href="#socials">Support</a>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mr-4 text-light" href="myAccount.html" id="navbarDropdownMenuLink"
-              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="border: 1px solid #FFFFFF;">
-              My Account
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="mypetitions.html">My Petitions</a>
-              <a class="dropdown-item" href="myAccount.html">Mail Box</a>
-              <a class="dropdown-item" href="myAccount.html">Manage Votes</a>
-              <a class="dropdown-item" href="myAccount.html">Settings</a>
+
+            <div class="d-flex flex-wrap mt-2">
+              <button type="button" id="editBtn" class="btn btn-primary mr-2 mb-2">
+                Edit profile
+              </button>
+              <a href="#" id="changePw" class="btn btn-outline-secondary mr-2 mb-2">
+                Change password
+              </a>
+              <a href="#" id="closeAcc" class="btn btn-outline-danger mb-2">
+                Close my account
+              </a>
             </div>
-          </li>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <form class="form-inline">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <a class="nav-item nav-link m-1 " href="#"><i class="fa-solid fa-magnifying-glass pl-1"></i></a>
           </form>
-        </span>
-      </div>
-    </nav>
-  </div>
-
-<!--Body-->
-<div class="body container-fluid bg-light">
-  <div class="container">
-    <h1 class="text-primary pt-5">Jane Cooper</h1>
-    <p class="text-left">Member since Dec 1, 2022.</p>
-
-  </div>
-
-  <div class=" border border-primary w-auto h-10"></div>
-
-  <div class="container">
-    <form action="/action_page.js">
-         <div class="mb-3 mt-3 row col-6">
-         <div class="col"><label for="email">Email:</label></div>
-         <div class="col "><input type="email" class="form-control" id="email" placeholder="janecooper@example.com" name="email"></div>
-        </div>
-        <div class="mb-3 row col-6">
-           <div class="col">
-            <label for="browser" class="form-label">Account Type:</label>
-          </div>
-           <div class="col"><input class="form-control" list="browsers" name="browser" id="browser" placeholder="individual/ organization">
-            <datalist id="browsers">
-             <option value="individual">
-             <option value="organization">
-            </datalist>
-          </div>
-        </div>
-        <div class="container row">
-          <div class="clearfix col-6">
-            <button type="button" class=" btn  float-start mb-3 m-3 btn-primary ">Edit profile</button>
-            <a class="float-start m-5">Change password</a>
-          </div>
-          <div class="container col-6 ">
-            <a class="float-right pt-4  ">Close my account</a>
-          </div>
-        </div>
-          
-     </form>
-  </div>
-
-  <div class="card rounded m-3" style="max-width:1245px; min-height: 54px;">
-    <div class="card-body"><span class=""><a href="#">Control Panel</a>/ My Profile</span></div>
-  </div>
-
-</div>
-
-
-
-  <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Esify.speak</h5>
-
-          <ul class="list-unstyled mb-4">
-            <li>
-              <a href="#!" class="text-white">Home</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Start a Petition</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">How to write a Petition</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Sponsored Petition</a>
-            </li>
-          </ul>
-        </div>
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Help</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Help(FAQ)</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">About Us</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Contact Us</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light" id="socials">Social</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Facebook</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Linkedln</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Twitter</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Newsletter</h5>
-          <p class="lead text-light">The best of Esify once a week</p>
-          <div class="form-outline form-white mb-4">
-            <input type="email" id="form5Example2" class="form-control pl-4" placeholder="Email Address..." />
-            <a href="#"> <i class="fa-regular fa-envelope text-white"></i></a>
-          </div>
         </div>
       </div>
     </div>
+  </main>
 
-    <!-- Copyright -->
-    <div class="text-center p-3 border-top border-light text-light">
-      &copy;2022 Esify.speak All right reserved.
+  <div id="footer-include"></div>
+
+  <div class="modal fade" id="wipModal" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 id="wipModalLabel" class="mb-2">Still in progress</h5>
+          <p class="mb-2 text-muted">This action isn’t available yet. We’re working on it.</p>
+          <small class="text-muted d-block">Please check back later.</small>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
 
-
-  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
   <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="include.js"></script>
+  <script>
+    (function () {
+      // Bootstrap validation
+      var forms = document.getElementsByClassName('needs-validation');
+      Array.prototype.forEach.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+
+      function wip() { $('#wipModal').modal('show'); }
+      document.getElementById('editBtn').addEventListener('click', wip);
+      document.getElementById('changePw').addEventListener('click', function (e) { e.preventDefault(); wip(); });
+      document.getElementById('closeAcc').addEventListener('click', function (e) { e.preventDefault(); wip(); });
+    })();
+  </script>
 </body>
 
 </html>
