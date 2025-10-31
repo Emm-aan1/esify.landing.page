@@ -5,633 +5,471 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esify.speak Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Esify.speak | Home</title>
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- first section  -->
-  <div class="first-sec container-fluid">
+  <div id="header-include"></div>
 
-    <!-- header  -->
-    <nav class="nav nav-pills pl-5 pr-5 pt-2 ">
-      <a href="#"><img src="images/logo_text-removebg-preview 4.png" alt="logo"
-          class=" float-left align-top align-middle align-bottom"></a>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link m-1 " href="faq.html">FAQ'S <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link m-1  " href="signUp.html">Sign Up</a>
-          <!-- <a class="nav-item nav-link m-1 " href="#"><i class="fa-solid fa-magnifying-glass"></i></a> -->
-          <a class="nav-item nav-link text-light " href="login.html"><button class="btn btn-secondary"
-              type="button">Login</button></a>
+  <header class="bg-light border-bottom">
+    <div class="container py-5 text-center">
+      <h1 class="display-5 mb-2">Make Changes With Your Voice</h1>
+      <p class="lead mb-4">Start a petition, conduct a vote, or follow the causes you love.</p>
+
+      <div class="row g-3 justify-content-center">
+        <div class="col-12 col-md-3 mb-2">
+          <a href="startPetition.html" class="btn btn-primary btn-block w-100">
+            <i class="fa-solid fa-wrench mr-2"></i> Start/Sign a Petition
+          </a>
         </div>
-      </nav>
-    </nav>
-
-    <!-- section content -->
-    <div class="head-content text-center mt-5 pt-4">
-      <h1 class="mb-3">Make Changes With Your Voice!!</h1>
-      <p>Start a petition, conduct a vote or follow the causes you love.</p>
-    </div>
-
-
-    <!-- section  content2-->
-    <div class="head-sections mt-5 text-center">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm">
-            <div class="container">
-              <div class="row">
-                <div class="col"><i class="fa-solid fa-wrench mr-3 text-primary"></i>Sign a Petition</div>
-                <div class="vr text-primary">|</div>
-                <div class="w-100 mb-5"></div>
-                <button class="btn btn-secondary mx-auto" type="button">Petition</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="container">
-              <div class="row">
-                <div class="col"><i class="fa-solid fa-check-to-slot mr-3 text-primary"></i>Conduct a Vote</div>
-                <div class="vr text-primary">|</div>
-                <div class="w-100 mb-5"></div>
-                <button class="btn btn-secondary mx-auto" type="button">Vote</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="container">
-              <div class="row">
-                <div class="col"><i class="fa-solid fa-heart mr-3 text-primary"></i>Follow causes you love</div>
-                <div class="w-100 mb-5"></div>
-                <button class="btn btn-secondary mx-auto" type="button">Follow</button>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 col-md-3 mb-2">
+          <a href="startPetition.html" class="btn btn-outline-primary btn-block w-100">
+            <i class="fa-solid fa-check-to-slot mr-2"></i> Conduct a Vote
+          </a>
+        </div>
+        <div class="col-12 col-md-3 mb-2">
+          <a href="browsePetition.html" class="btn btn-outline-secondary btn-block w-100">
+            <i class="fa-solid fa-heart mr-2"></i> Follow Causes
+          </a>
         </div>
       </div>
     </div>
+  </header>
 
-  </div>
+  <section class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="h4 mb-0">Successful Petitions</h2>
+      <a href="browsePetition.html" class="btn btn-sm btn-outline-primary">Browse all</a>
+    </div>
 
+    <div id="successPetitions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#successPetitions" data-slide-to="0" class="active"></li>
+        <li data-target="#successPetitions" data-slide-to="1"></li>
+        <li data-target="#successPetitions" data-slide-to="2"></li>
+      </ol>
 
-  <!-- successful petition  -->
-  <div class="second-sec container-fluid text-wrap">
-    <div class=" div container-fluid text-center mt-3">
-      <h2>Successful Petitions</h2>
+      <div class="carousel-inner">
 
-      <div id="carouselExampleIndicators" class="carousel slide mt-0" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/prof.jpg" alt="professor" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">REINSTATEMENT OF CURRENT UNILAG CHANCELLOR</h4>
-                  <p class="text-justify">
-                    The current Chancellor of the University of Lagos,<br> Mr Wale Babalakin has illegally removed the
-                    vice<br> chancellor of the University of Lagos. Sign this<br> petition to get our amicable VC
-                    reinstated
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-                  </div>
+        <div class="carousel-item active">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;">
+                  <img src="images/prof.jpg" class="d-block w-100 h-100" style="object-fit:cover;display:block;"
+                    alt="Professor">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/prof.jpg" alt="professor" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">REINSTATEMENT OF CURRENT UNILAG CHANCELLOR</h4>
-                  <p class="text-justify">
-                    The current Chancellor of the University of Lagos,<br> Mr Wale Babalakin has illegally removed the
-                    vice<br> chancellor of the University of Lagos. Sign this<br> petition to get our amicable VC
-                    reinstated
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/prof.jpg" alt="professor" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">REINSTATEMENT OF CURRENT UNILAG CHANCELLOR</h4>
-                  <p class="text-justify">
-                    The current Chancellor of the University of Lagos,<br> Mr Wale Babalakin has illegally removed the
-                    vice<br> chancellor of the University of Lagos. Sign this<br> petition to get our amicable VC
-                    reinstated
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">Reinstatement of Current UNILAG Chancellor</h5>
+                  <p class="card-text mb-3">The current Chancellor of the University of Lagos has reportedly removed the
+                    Vice Chancellor. Sign to support reinstatement.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Signatures: 705</small>
+                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-2"></i>Sign</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
 
-
-  <!-- trending petiton  -->
-  <div class="trending text-center pt-5">
-    <h2>Trending Petitions</h2>
-
-    <div class="container pb-5">
-      <div class="card-deck pt-5">
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/waec.jpg" alt="waec" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">REVIEW OF WASSCE 2021 RESULTS</h4>
-              <p class="text-justify">
-                The Governing body of the Western African senir school Certificate Examination which is WAEC has agreed
-                to review the 2021 Examinations because of mass failure.
-              </p>
-              <div class="d-flex justify-content-between mt-4 pr-5 ">
-                <p>Signature: 705</p>
-                <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/Faculty_of_Art,_University_Of_Ibadan.jpg" alt="faculty-0f-art" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">PROTECT VICTIM OF BOLLS INC.</h4>
-              <p class="text-justify">
-                The staff of Bolls Incoporated is inviting you to join them in signing this petition to demand a clear
-                code of conduct that hold abusers accountable and empower victims survivors.
-              </p>
-              <div class="d-flex justify-content-between mt-4 pr-5 ">
-                <p>Signature: 527</p>
-                <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-deck pt-5">
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/diamond-care.jpg" alt="diamond care" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">PAYRISE FOR DIAMOND CARE STAFFS</h4>
-              <p class="text-justify">
-                Give all Diamond care staff a 20% payrise - To have played a pivotal role in keeping the community going
-                during this pandemic, its only fair that Diamond care staff are awarded properly for this hardwork
-              </p>
-              <div class="d-flex justify-content-between mt-4 pr-5 ">
-                <p>Signature: 284</p>
-                <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/asuu.jpg" alt="ASUU" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">PROTEST ON PAYMENT OF SALARY FOR EQUAL WORK</h4>
-              <p class="text-justify">
-                The Academic Staff Union of the University of Lagos has commence a three month protest on the equal
-                payment for all workers.
-              </p>
-              <div class="d-flex justify-content-between mt-5 pr-5 ">
-                <p>Signature: 1,023</p>
-                <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button type="button" class="btn btn-primary">Browse all Votes</button>
-  </div>
-
-
-
-  <!-- successful votes  -->
-  <div class="second-sec container-fluid">
-    <div class=" div container-fluid text-center mt-3">
-      <h2>Successful Votes</h2>
-
-      <div id="carouselExampleIndicators" class="carousel slide mt-0" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/ladoke-university.jpg" alt="lautech" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">LAUTECH SUG ELECTIONS</h4>
-                  <p class="text-justify">
-                    A vote conducted by the Student of Lodoke<br> Akintola University saw Oluwadamilare<br> emerge as
-                    the new Student Union<br> Government President
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 17,705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-                  </div>
+        <div class="carousel-item">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;">
+                  <img src="images/waec.jpg" class="d-block w-100 h-100" style="object-fit:cover;display:block;"
+                    alt="WAEC">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/ladoke-university.jpg" alt="lautech" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">LAUTECH SUG ELECTIONS</h4>
-                  <p class="text-justify">
-                    A vote conducted by the Student of Lodoke<br> Akintola University saw Oluwadamilare<br> emerge as
-                    the new Student Union<br> Government President
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 17,705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container p-5">
-              <div class="grid mx-auto">
-                <div class="col pr-0">
-                  <img src="images/ladoke-university.jpg" alt="lautech" class="img-fluid">
-                </div>
-                <div class="col-text bg-light pt-4 pl-4 pr-2">
-                  <h4 class="text-left mb-3">LAUTECH SUG ELECTIONS</h4>
-                  <p class="text-justify">
-                    A vote conducted by the Student of Lodoke<br> Akintola University saw Oluwadamilare<br> emerge as
-                    the new Student Union<br> Government President
-                  </p>
-                  <div class="d-flex justify-content-between mt-4 pr-5 ">
-                    <p>Signature: 17,705</p>
-                    <button type="button" class="btn"><i class="fa-solid fa-pen mr-2"></i>SIGN</button>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">Review of WASSCE 2021 Results</h5>
+                  <p class="card-text mb-3">Call for a transparent review following reports of mass failures.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Signatures: 1,204</small>
+                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-2"></i>Sign</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
 
-
-
-  <!-- trending votes  -->
-  <div class="trending text-center pt-5">
-    <h2>Trending Votes</h2>
-
-    <div class="container pb-5">
-      <div class="card-deck pt-5">
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/exam-result.jpg" alt="exams" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">REVIEW OF GEG 201 RESULTS</h4>
-              <p class="text-justify">
-                The Faculty of Engineering humbly request that the results of GEG 201 kindly be reviewed by the Faculty
-                Authorities. The reason for this petition is beacause of the mass failure of the students.
-              </p>
-              <div class="d-flex justify-content-between mt-4 pr-5 ">
-                <p>Votes: 7,005</p>
-                <button type="button" class="btn">VOTE</button>
+        <div class="carousel-item">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;">
+                  <img src="images/diamond-care.jpg" class="d-block w-100 h-100" style="object-fit:cover;display:block;"
+                    alt="Diamond Care">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">Pay Rise for Diamond Care Staff</h5>
+                  <p class="card-text mb-3">Advocating a 20% pay rise in recognition of service and commitment.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Signatures: 284</small>
+                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-2"></i>Sign</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/vote.jpg" alt="votes" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">VOTE FOR A NEW CLASS GOVERNOR</h4>
-              <p class="text-justify">
-                Desire accountability, diligence and competence?
-                Then make a change today by voting Grace as the new class governor of Civil Engr Year 3 set to enjoy
-                these and more!
-              </p>
-              <div class="d-flex justify-content-between mt-4 pr-5 ">
-                <p>Votes: 78</p>
-                <button type="button" class="btn">VOTE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-deck pt-5">
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/school-motto.jpg" alt="St.francis.Xavier" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">VOTING FOR A NEW SCHOOL MOTTO</h4>
-              <p class="text-justify">
-                Voting for a new school moto - Join us in voting a new school motto as we rebrand its image.
-              </p>
-              <div class="d-flex justify-content-between mt-5 pr-5 ">
-                <p>Votes: 2,055</p>
-                <button type="button" class="btn">VOTE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="grid">
-            <div class="col pr-0">
-              <img src="images/home-stand.jpg" alt="home stand" class="img-fluid">
-            </div>
-            <div class="col-text pt-3 pl-3 pr-3">
-              <h4 class="text-left mb-3">VOTE JOY ORAKWEAS AS STAFF OF THE YEAR</h4>
-              <p class="text-justify">
-                Voting for staff of the year - vote Joy Orakweas staff of the year for being punctual and diligent at
-                work
-              </p>
-              <div class="d-flex justify-content-between mt-5 pr-5 ">
-                <p>Votes: 52</p>
-                <button type="button" class="btn">VOTE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button type="button" class="btn btn-primary">Browse all Votes</button>
-  </div>
 
-
-
-  <!-- giving you a voice  -->
-  <div class="text-center ">
-    <h2>Esify.speak - Giving you a Voice</h2>
-  </div>
-  <div class="give-voice text-center pt-5">
-    <h5 class="mb-5">
-      Esify amplifies voices. We are a responsible petition platform with no political affiliations.
-    </h5>
-    <div class="voices mx-auto">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/vc1.png" class="rounded" alt="signing petition">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-left">
-              <h5 class="mb-3">Sign a petition</h5>
-              <p>
-                Signing a petition with Esify is very simple. Simply follow this online processes and get it correctly.
-                Whether you act like an individual or you work as a team or group, Esify ha the right tools and social
-                media
-                for Your campaign
-              </p>
-              <button type="button" class="btn btn-primary">Sign a petition</button>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-right">
-              <h5 class="mb-3">Conduct a Vote</h5>
-              <p>
-                Esify can deliver real results for your cause. We have a list of <br>variety of testimonals which
-                reflects
-                our
-                successes and <br>member satisfactions with our features. Our aim is not only to amplify the voices of
-                individuals but to deliver positive<br> outcome for our members and users.
-              </p>
-              <button type="button" class="btn btn-primary pl-5 pr-5">Vote</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-left">
-              <img src="images/vc2.png" class="rounded" alt="conducting vote">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="images/vc3.jpg" class="rounded" alt="follow the cause">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body text-left">
-              <h5 class="mb-3">Follow the causes you love</h5>
-              <p>
-                Esify is not just a channel for casting a vote but a hub for causes across regions and places. This
-                means
-                our members can follow and connect with a variety of other members who has similiar interest and values.
-                Esify encourages mutual sharing of ideas and support to facilitate positive outcomes.
-              </p>
-              <button type="button" class="btn btn-primary">Petition by Category</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- third section -->
-
-  <section class="popular-name container-fluid text-center align-middle justify-content-xl-center pt-5 ">
-    <div class="text-center pt-5">
-      <span>Esify was the voting platform for the Student Union Government electiond of our school</span>
-    </div>
-    <div>
-      <span class="name mt-3 "><em>.</em> PROF FOLASADE OGUNSOLA - UNILAG Vice Chancellor</span>
+      <a class="carousel-control-prev" href="#successPetitions" role="button" data-slide="prev" style="width:56px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+          style="filter:invert(1) drop-shadow(0 0 2px rgba(0,0,0,.6));"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#successPetitions" role="button" data-slide="next" style="width:56px;">
+        <span class="carousel-control-next-icon" aria-hidden="true"
+          style="filter:invert(1) drop-shadow(0 0 2px rgba(0,0,0,.6));"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </section>
-  <!-- fourth section -->
-  <section class="customer-list container-fluid pt-5">
-    <span class=" mx-auto justify-content-center text-break">CUSTOMERS(ORGANIZATIONS AND SCHOOLS) USING ESIFY.SPEAK WILL BE LISTED
-      HERE </span>
+
+  <section class="bg-white">
+    <div class="container py-5">
+      <h2 class="h4 text-center mb-4">Trending Petitions</h2>
+
+      <div class="card-deck">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="images/waec.jpg" class="img-fluid d-block w-100 h-100" style="object-fit:cover" alt="WAEC">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title">Review of WASSCE 2021 Results</h5>
+                <p class="card-text">WAEC agrees to review due to mass failure concerns.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Signatures: 705</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-1"></i> Sign</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="images/Faculty_of_Art,_University_Of_Ibadan.jpg" class="img-fluid d-block w-100 h-100"
+                style="object-fit:cover" alt="UI Faculty of Arts">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title">Protect Victims of Bolls Inc.</h5>
+                <p class="card-text">Demand a clear code of conduct that holds abusers accountable.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Signatures: 527</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-1"></i> Sign</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck mt-4">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="images/diamond-care.jpg" class="img-fluid d-block w-100 h-100" style="object-fit:cover"
+                alt="Diamond Care">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title">Pay Rise for Diamond Care Staff</h5>
+                <p class="card-text">Recognizing pivotal roles and hard work with fair compensation.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Signatures: 284</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-1"></i> Sign</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="images/asuu.jpg" class="img-fluid d-block w-100 h-100" style="object-fit:cover" alt="ASUU">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body d-flex flex-column h-100">
+                <h5 class="card-title">Equal Pay Protest</h5>
+                <p class="card-text">Call for equal payment across workers for equal work.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <small class="text-muted">Signatures: 1,023</small>
+                  <a href="#" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-pen mr-1"></i> Sign</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="browsePetition.html" class="btn btn-primary">Browse all Petitions</a>
+      </div>
+    </div>
   </section>
 
+  <section class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="h4 mb-0">Successful Votes</h2>
+      <a href="browsePetition.html#tab-sponsored" class="btn btn-sm btn-outline-primary">See more</a>
+    </div>
 
+    <div id="successVotes" class="carousel slide position-relative" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#successVotes" data-slide-to="0" class="active"></li>
+        <li data-target="#successVotes" data-slide-to="1"></li>
+        <li data-target="#successVotes" data-slide-to="2"></li>
+      </ol>
 
-  <!-- footer section  -->
-  <div class="footer-sec container-fluid">
-    <div class=" my-">
+      <div class="carousel-inner">
 
-      <footer class="text-center text-lg-start  mt-xl-5 pt-4">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h5 class="text-uppercase mb-4 text-light">Esify</h5>
+        <div class="carousel-item active">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;line-height:0;">
+                  <img src="images/ladoke-university.jpg" class="d-block w-100 h-100" style="object-fit:cover;"
+                    alt="LAUTECH">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">LAUTECH SUG Elections</h5>
+                  <p class="card-text mb-3">Students elected a new Union Government President in a transparent vote.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Votes: 17,705</small>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="carousel-item">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;line-height:0;">
+                  <img src="images/exam-result.jpg" class="d-block w-100 h-100" style="object-fit:cover;" alt="GEG 201">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">Review of GEG 201 Results</h5>
+                  <p class="card-text mb-3">Faculty-wide vote to request an academic review following mass failures.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Votes: 7,005</small>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card border-0">
+            <div class="row no-gutters align-items-stretch">
+              <div class="col-md-5">
+                <div style="height:260px;overflow:hidden;line-height:0;">
+                  <img src="images/vote.jpg" class="d-block w-100 h-100" style="object-fit:cover;" alt="Vote">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body h-100 d-flex flex-column">
+                  <h5 class="card-title">Vote for a New Class Governor</h5>
+                  <p class="card-text mb-3">Choosing accountable, diligent leadership for the Civil Engineering set.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Votes: 78</small>
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#successVotes"
+        class="position-absolute d-flex align-items-center justify-content-center rounded-circle bg-white shadow"
+        style="top:50%;left:12px;transform:translateY(-50%);width:44px;height:44px;z-index:10;text-decoration:none;"
+        role="button" data-slide="prev" aria-label="Previous">
+        <i class="fa-solid fa-angle-left"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a href="#successVotes"
+        class="position-absolute d-flex align-items-center justify-content-center rounded-circle bg-white shadow"
+        style="top:50%;right:12px;transform:translateY(-50%);width:44px;height:44px;z-index:10;text-decoration:none;"
+        role="button" data-slide="next" aria-label="Next">
+        <i class="fa-solid fa-angle-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container py-5">
+      <h2 class="h4 text-center mb-4">Esify.speak — Giving You a Voice</h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative"
+              style="padding-top:56.25%;overflow:hidden;border-top-left-radius:.25rem;border-top-right-radius:.25rem;">
+              <img src="images/vc1.png" alt="Sign a Petition" class="position-absolute w-100 h-100"
+                style="top:0;left:0;object-fit:cover;object-position:center;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <span class="badge badge-primary mr-2"><i class="fa-solid fa-pen-nib mr-1"></i>Petitions</span>
+                <small class="text-muted">Quick & effective</small>
+              </div>
+              <h5 class="card-title mb-2">Sign a Petition</h5>
+              <p class="card-text mb-3">
+                Add your voice in seconds. Whether you’re solo or in a group, Esify gives you the right tools to power
+                your campaign.
+              </p>
               <ul class="list-unstyled mb-4">
-                <li>
-                  <a href="#!" class="text-white">Home</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Start a Petition</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">How to write a Petition</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Sponsored Petition</a>
-                </li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>One-click support</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Shareable links</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Real-time counts</li>
               </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h5 class="text-uppercase mb-4 text-light">Help</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-white">Help(FAQ)</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">About Us</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Terms of Use</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h5 class="text-uppercase mb-4 text-light">Socials</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!" class="text-white">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Facebook</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Twitter</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-light">
-              <h5 class="text-uppercase mb-4 text-light">Newsletter</h5>
-              <p>The best of Esify once a week</p>
-              <div class=" container-fluid">
-                <a href="https://gmail.us12.list-manage.com/subscribe/post?u=568269adc75ff99a34b20e3d4&amp;id=d98f7a05d8&amp;f_id=00a3bce0f0"
-                  class="btn" target="_blank">Notify Me</a>
+              <div class="mt-auto">
+                <a href="startPetition.html" class="btn btn-primary btn-block">Sign a Petition</a>
               </div>
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
-        <div class="text-center text-light p-3 border-top border-white">
-          © 2022 Esify. All right reserved
-
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative"
+              style="padding-top:56.25%;overflow:hidden;border-top-left-radius:.25rem;border-top-right-radius:.25rem;">
+              <img src="images/vc2.png" alt="Conduct a Vote" class="position-absolute w-100 h-100"
+                style="top:0;left:0;object-fit:cover;object-position:center;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <span class="badge badge-info mr-2"><i class="fa-solid fa-check-to-slot mr-1"></i>Votes</span>
+                <small class="text-muted">Transparent & fair</small>
+              </div>
+              <h5 class="card-title mb-2">Conduct a Vote</h5>
+              <p class="card-text mb-3">
+                Run structured, auditable votes that deliver real outcomes for your community, class, or organization.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Anonymous ballots</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Live results</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Shareable dashboards</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="startPetition.html" class="btn btn-outline-primary btn-block">Start a Vote</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Copyright -->
-      </footer>
 
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="position-relative"
+              style="padding-top:56.25%;overflow:hidden;border-top-left-radius:.25rem;border-top-right-radius:.25rem;">
+              <img src="images/vc3.jpg" alt="Follow Causes" class="position-absolute w-100 h-100"
+                style="top:0;left:0;object-fit:cover;object-position:center;">
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center mb-2">
+                <span class="badge badge-secondary mr-2"><i class="fa-solid fa-heart mr-1"></i>Follow</span>
+                <small class="text-muted">Stay engaged</small>
+              </div>
+              <h5 class="card-title mb-2">Follow the Causes You Love</h5>
+              <p class="card-text mb-3">
+                Discover causes across regions, connect with like-minded people, and support meaningful change.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Topic categories</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Notifications</li>
+                <li class="mb-1"><i class="fa-solid fa-check text-success mr-2"></i>Share & invite</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="browsePetition.html" class="btn btn-outline-secondary btn-block">Browse by Category</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-2 d-md-none">
+        <div class="col-12">
+          <a href="browsePetition.html" class="btn btn-link btn-block p-0">See what’s trending →</a>
+        </div>
+      </div>
     </div>
-    <!-- End of .container -->
-  </div>
+  </section>
 
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
+
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4 p-md-5">
+            <div class="d-flex align-items-start">
+              <div class="mr-3 d-none d-md-block">
+                <span
+                  class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                  style="width:56px;height:56px;font-size:1.25rem;">
+                  <i class="fa-solid fa-quote-left"></i>
+                </span>
+              </div>
+              <div>
+                <blockquote class="blockquote mb-3 text-dark">
+                  <p class="mb-0">
+                    “Esify was the voting platform for the Student Union Government elections of our school.”
+                  </p>
+                </blockquote>
+                <footer class="blockquote-footer mb-0">
+                  <strong>Prof. Folasade Ogunsola</strong>
+                  <span class="text-muted">— UNILAG Vice Chancellor</span>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <small class="text-muted">Trusted by leaders in education and community organizations</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-include"></div>
+
   <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
-  <script src="//code.tidio.co/l1xdc4pwc5magjmfbwjfxamaeak0qiaj.js" async></script>
+  <script src="include.js"></script>
 </body>
 
 </html>

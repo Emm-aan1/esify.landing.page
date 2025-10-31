@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="images/logo_text-removebg-preview 4.png" alt="Esify.speak" style="height:60px">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" data-key="start" href="startPetition.html">Start a Petition</a></li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-key="browse" href="#" id="browseMenu" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+        <div class="dropdown-menu" aria-labelledby="browseMenu">
+          <a class="dropdown-item" href="browsePetition.html">Active Petitions</a>
+          <a class="dropdown-item" href="browsePetition.html">Latest Petitions</a>
+          <a class="dropdown-item" href="browsePetition.html">Sponsored Petitions</a>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" data-key="faq" href="faq.html">FAQ</a></li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-key="account" href="myAccount.html" id="accountMenu" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+        <div class="dropdown-menu" aria-labelledby="accountMenu">
+          <a class="dropdown-item" href="mypetitions.html">My Petitions</a>
+          <a class="dropdown-item" href="mailbox.html">Mail Box</a>
+          <a class="dropdown-item" href="myAccount.html">Manage Votes</a>
+          <a class="dropdown-item" href="myAccount.html">Settings</a>
+        </div>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0 mr-3" role="search">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    </form>
+
+    <div class="d-flex">
+      <a href="login.html" class="btn btn-outline-primary mr-2">Login</a>
+      <a href="signUp.html" class="btn btn-primary">Sign Up</a>
+    </div>
+  </div>
+</nav>
+
+<script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
