@@ -2,282 +2,200 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Settings</title>
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="homepage.css">
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand p-0" href="#"><img src="images/logo_text-removebg-preview 4.png" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse pr-5 pb-4" id="navbarText">
-        <ul class="navbar-nav mr-auto"></ul>
-        <span class="navbar-text navbar-nav">
-          <a class="nav-link nav-item  pr-4 text-light" href="startPetition.html">Start a Petition</a>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <a class="nav-link nav-item  pr-4 text-light" href="#">FAQ</a>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle pr-4 text-light" href="#" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Browse Petitions
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Active Petitions</a>
-              <a class="dropdown-item" href="#">Latest Petition</a>
-              <a class="dropdown-item" href="#">Sponsored Petition</a>
-            </div>
-          </li>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <a class="nav-link nav-item  pr-4 text-light" href="#">My Account</a>
-        </span>
-        <span class="navbar-text navbar-nav">
-          <form class="form-inline">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <a class="nav-item nav-link m-1 " href="#"><i class="fa-solid fa-magnifying-glass pl-1"></i></a>
-          </form>
-        </span>
+  <div id="header-include" data-active="account"></div>
+
+  <main class="bg-light" style="padding-top:30px;">
+    <section class="container py-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-3">
+        <div>
+          <h1 class="h4 mb-1">Account Control Panel</h1>
+          <small class="text-muted d-block">Manage your petitions, profile, and preferences</small>
+        </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0 mb-0">
+            <li class="breadcrumb-item"><a href="myAccount.html">My Account</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Settings</li>
+          </ol>
+        </nav>
       </div>
-    </nav>
-  </div>
 
-
-  <div class="main text-center pt-4">
-    <p class="h2">Account Control Panel</p>
-    <p class="lead mb-5">As a member you will be able to create petitions, polls for believed cause that will
-      directly result
-      the change in their organization. At the moment, you are an unverified<br> member. A verification email has been
-      sent
-      to you. Kindly verify your email and get started. If you cannot find your verification email, kindly click here.
-    </p>
-    <hr>
-
-    <div class="row mt-5 top-row">
-      <div class="col-sm-6 mb-4">
-        <div class="card first-card">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/petition 1.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">My petitions (toolboxes)</h5>
-                    <p class="card-text">Manage your petitions</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/signature 1.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">My personal signatures</h5>
-                    <p class="card-text">Edit or delete your personal votes</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/image 3.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">My personal votes</h5>
-                    <p class="card-text">Edit or delete your personal votes</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/image 4.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">Mailbox</h5>
-                    <p class="card-text">Manage private message</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/image 5.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">Profile</h5>
-                    <p class="card-text">Manage your profile data</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/image 6.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">Settings</h5>
-                    <p class="card-text">Manage your account settings</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-2">
-                  <img src="images/img/image 7.png" alt="Petition" class="img-thumbnail">
-                </div>
-                <div class="col-10">
-                  <div class="card-body p-0 text-left">
-                    <h5 class="card-title">Information and assistance</h5>
-                    <p class="card-text">Information, help e.t.c.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+      <div class="alert alert-info d-flex align-items-start">
+        <i class="fa-solid fa-circle-info mr-2 mt-1"></i>
+        <div>
+          You’re currently <strong>unverified</strong>. A verification email has been sent to you. If you can’t find it,
+          <a href="#" id="resend-link">click here to resend</a>.
         </div>
       </div>
 
-      <div class="col-sm-6 mb-5">
-        <div class="card second-card mt-3">
-          <button type="button" class="btn">Start a Petition</button>
-          <div class="card mt-5 mb-0">
-            <div class="card-body">
-              <h5 class="card-title">Go premium today!</h5>
-              <div class="m-4">
-                <ul class="list-styled-dot text-left w-75 mx-auto">
-                  <li>Customize your petitions</li>
-                  <li>Download full signatures and votes in PDF formats</li>
-                  <li>Priority customer service</li>
-                </ul>
-              </div>
-              <a href="#" class="btn">Buy premium</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card last-card">
-      <div class="card-body text-primary text-left pl-5">
-        Control Panel
-      </div>
-    </div>
-  </div>
-
-
-  <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
       <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Esify.speak</h5>
+        <div class="col-lg-7 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-0">
+              <div class="list-group list-group-flush">
 
-          <ul class="list-unstyled mb-4">
-            <li>
-              <a href="#!" class="text-white">Home</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Start a Petition</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">How to write a Petition</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Sponsored Petition</a>
-            </li>
-          </ul>
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  onclick="location.href='mypetitions.html'">
+                  <img src="images/img/petition 1.png" class="rounded mr-3"
+                    style="width:44px;height:44px;object-fit:cover" alt="Petitions">
+                  <div>
+                    <div class="font-weight-medium">My petitions (toolboxes)</div>
+                    <small class="text-muted">Create, edit, and manage your petitions</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  data-toggle="modal" data-target="#wipModal">
+                  <img src="images/img/signature 1.png" class="rounded mr-3"
+                    style="width:44px;height:44px;object-fit:cover" alt="Signatures">
+                  <div>
+                    <div class="font-weight-medium">My personal signatures</div>
+                    <small class="text-muted">Edit or delete your personal signatures</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  data-toggle="modal" data-target="#wipModal">
+                  <img src="images/img/image 3.png" class="rounded mr-3" style="width:44px;height:44px;object-fit:cover"
+                    alt="Votes">
+                  <div>
+                    <div class="font-weight-medium">My personal votes</div>
+                    <small class="text-muted">Edit or delete your personal votes</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  onclick="location.href='mailbox.html'">
+                  <img src="images/img/image 4.png" class="rounded mr-3" style="width:44px;height:44px;object-fit:cover"
+                    alt="Mailbox">
+                  <div>
+                    <div class="font-weight-medium">Mailbox</div>
+                    <small class="text-muted">Manage private messages</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  data-toggle="modal" data-target="#wipModal">
+                  <img src="images/img/image 5.png" class="rounded mr-3" style="width:44px;height:44px;object-fit:cover"
+                    alt="Profile">
+                  <div>
+                    <div class="font-weight-medium">Profile</div>
+                    <small class="text-muted">Manage your profile data</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  data-toggle="modal" data-target="#wipModal">
+                  <img src="images/img/image 6.png" class="rounded mr-3" style="width:44px;height:44px;object-fit:cover"
+                    alt="Settings">
+                  <div>
+                    <div class="font-weight-medium">Settings</div>
+                    <small class="text-muted">Account preferences and security</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+                <button type="button" class="list-group-item list-group-item-action d-flex align-items-center"
+                  data-toggle="modal" data-target="#wipModal">
+                  <img src="images/img/image 7.png" class="rounded mr-3" style="width:44px;height:44px;object-fit:cover"
+                    alt="Help">
+                  <div>
+                    <div class="font-weight-medium">Information & assistance</div>
+                    <small class="text-muted">Help, guides, and FAQs</small>
+                  </div>
+                  <i class="fa-solid fa-chevron-right ml-auto text-muted"></i>
+                </button>
+
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Help</h5>
+        <div class="col-lg-5 mb-4">
+          <div class="card border-0 shadow-sm mb-3">
+            <div class="card-body text-center">
+              <h5 class="mb-2">Start a Petition</h5>
+              <p class="text-muted mb-3">Kick off a new campaign in minutes.</p>
+              <a href="startPetition.html" class="btn btn-primary btn-block">Create Petition</a>
+            </div>
+          </div>
 
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Help(FAQ)</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">About Us</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Contact Us</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Terms of Use</a>
-            </li>
-          </ul>
-        </div>
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-star mr-3 text-warning mt-1"></i>
+                <div class="flex-fill">
+                  <h5 class="mb-2">Go premium today!</h5>
+                  <ul class="mb-3 pl-3">
+                    <li>Customize your petitions</li>
+                    <li>Download full signatures/votes (PDF)</li>
+                    <li>Priority customer support</li>
+                  </ul>
+                  <button class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#wipModal">
+                    Buy Premium
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Social</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-white">Facebook</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Linkedln</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Twitter</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 class="text-uppercase mb-4 text-light">Newsletter</h5>
-          <p class="lead text-light">The best of Esify once a week</p>
-          <div class="form-outline form-white mb-4">
-            <input type="email" id="form5Example2" class="form-control pl-4" placeholder="Email Address..." />
-            <a href="#"> <i class="fa-regular fa-envelope text-white"></i></a>
+          <div class="card border-0 shadow-sm mt-3">
+            <div class="card-body py-2">
+              <small class="text-muted">Control Panel</small>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+
+  <div class="modal fade" id="wipModal" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h5 id="wipModalLabel" class="mb-1">Not available yet</h5>
+          <p class="mb-2 text-muted">This feature is still in progress. Please check back soon.</p>
+          <small class="text-muted d-block">Thanks for your patience.</small>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Copyright -->
-    <div class="text-center p-3 border-top border-light text-light">
-      &copy;2022 Esify.speak All right reserved.
-    </div>
-  </footer>
-
-
-  <script src="https://kit.fontawesome.com/6e274c4be9.js" crossorigin="anonymous"></script>
   <script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
   <script src="bootstrap/popper.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="include.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var resend = document.getElementById('resend-link');
+      if (resend) {
+        resend.addEventListener('click', function (e) {
+          e.preventDefault();
+          $('#wipModal').modal('show');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
